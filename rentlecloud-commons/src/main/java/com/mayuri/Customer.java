@@ -1,6 +1,6 @@
 package com.mayuri;
 
-import javax.annotation.Generated;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,9 +11,17 @@ public class Customer {
 	@Id
 	@GeneratedValue
 	int id;
+	
+	@Column
 	String firstName;
+	
+	@Column
 	String lastName;
+	
+	@Column
 	String dlNumber;
+	
+	@Column
 	String zipCode;
 	public int getId() {
 		return id;
